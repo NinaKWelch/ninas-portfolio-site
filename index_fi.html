@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome icon-fonts -->
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+	<!-- Google Fonts: Open Sans & Oswald -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    <!-- Styles -->
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<header class="flex-container">
+			<picture>
+		        <source
+		          media="(min-width: 400px)"
+		          srcset="img/nw_design_logo_lg.png x2, img/nw_design_logo_md.png">
+		        <img src="img/nw_d_logo_sm.png" srcset="img/nw_d_logo_lg.png x2, img/nw_d_logo_sm.png" class="logo" alt="NW*design">
+		    </picture>
+
+            <!-- Hamburger menu -->
+			<button class="btn nav-btn">
+				<span class="fas fa-bars" title="Valikko"></span>
+				<span class="sr-only">Valikko</span>
+			</button>
+
+			<div class="language-menu">
+				<a href="index.html" class="language">English</a> | <a href="index_fi.html" class="language language-active">Finnish</a>
+			</div>
+		</header>
+
+        <!-- Main navigation -->
+		<nav>
+			<ul class="flex-container nav-menu">
+			 	<li><a href="index.html" class="nav-link active">Kotisivu</a></li>
+			 	<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+			 	<li><a href="#about" class="nav-link">Kuvaus</a></li>
+			 	<li><a href="#contact" class="nav-link">Yhteystiedot</a></li>
+			 	<li class="nav-language"><a href="index.html" class="language">English</a> | <a href="index_fi.html" class="language language-active">Finnish</a></li>
+			</ul>
+		</nav>
+
+		<div class="banner">
+			<h1 class="banner-text">Front-End<br>Ohjelmointia<br><span>Puhtaasti &amp; kauniisti</span></h1>
+		</div><!-- /.banner -->
+	</div><!-- /.container -->
+
+    <main>
+		<section id=“portfolio” class="flex-container">
+			<h2>Portfolio</h2>
+
+			<div class="portfolio-item">
+				<a href="http://yunji.co.uk" class="portfolio-link" target="_blank">
+					<picture>
+						<source
+						media="(min-width: 600px)"
+						srcset="img/portfolio_yunji-800_lg.jpg 2x, img/portfolio_yunji-400_sm.jpg">
+						<source
+						media="(min-width: 400px)"
+						srcset="img/portfolio_yunji-1200_xlg.jpg 2x, img/portfolio_yunji-600_md.jpg">
+						<img src="img/portfolio_yunji-600_md.jpg" srcset="img/portfolio_yunji-800_lg.jpg 2x, img/portfolio_yunji-400_sm.jpg" class="portfolio-img" alt="Yunji-kotisivu">
+					</picture>
+
+					<h4 class="portfolio-text">Yunji Verkkosivut</h4>
+				</a>
+			</div>
+
+			<div class="portfolio-item">
+				<a href="https://ninakwelch.github.io/trading-card-website/" class="portfolio-link" target="_blank">
+					<picture>
+						<source
+						media="(min-width: 600px)"
+						srcset="img/portfolio_trading_cards-800-lg.jpg 2x, img/portfolio_trading_cards-400_sm.jpg">
+						<source
+						media="(min-width: 400px)"
+						srcset="img/portfolio_trading_cards-1200_xlg.jpg 2x, img/portfolio_trading_cards-600_md.jpg">
+						<img src="img/portfolio_trading_cards-600_md.jpg" srcset="img/portfolio_trading_cards-800_lg.jpg 2x, img/portfolio_trading_cards-400_sm.jpg" class="portfolio-img" alt="Trading Cards -kotisivu">
+					</picture>
+					<h4 class="portfolio-text">Trading Cards Verkkosivut</h4>
+				</a>
+			</div>
+
+			<div class="portfolio-item">
+				<a href="https://ninakwelch.github.io/ninas-pixel-art-maker" class="portfolio-link" target="_blank">
+					<picture>
+						<source
+						media="(min-width: 600px)"
+						srcset="img/portfolio_pixel_art-800_lg.jpg 2x, img/portfolio_pixel_art-400_sm.jpg">
+						<source
+						media="(min-width: 400px)"
+						srcset="img/portfolio_pixel_art-1200_xlg.jpg 2x, img/portfolio_pixel_art-600_md.jpg">
+						<img src="img/portfolio_pixel_art-600_md.jpg" srcset="img/portfolio_pixel_art-800_lg.jpg 2x, img/portfolio_pixel_art-400_sm.jpg" class="portfolio-img" alt="Pixel Art Maker -kotisivu">
+					</picture>
+					<h4 class="portfolio-text">Pixel Art Maker</h4>
+				</a>
+			</div>
+
+			<div class="portfolio-item">
+				<a href="#" class="portfolio-link" target="_blank">
+					<img src="http://via.placeholder.com/500x375" class="portfolio-img" alt="Placeholder image">
+					<h4 class="portfolio-text">Projekti 4</h4>
+				</a>
+			</div>
+
+			<div class="portfolio-item">
+				<a href="#" class="portfolio-link" target="_blank">
+					<img src="http://via.placeholder.com/500x375" class="portfolio-img" alt="Placeholder image">
+					<h4 class="portfolio-text">PProjekti 5</h4>
+				</a>
+			</div>
+
+			<div class="portfolio-item">
+				<a href="#" class="portfolio-link" target="_blank">
+					<img src="http://via.placeholder.com/500x375" class="portfolio-img" alt="Placeholder image">
+					<h4 class="portfolio-text">Projekti 6</h4>
+				</a>
+			</div>
+		</section>
+
+		<section id=“about”>
+		    <h2>Kuvaus</h2>
+
+		    <picture>
+		    	<source
+		    	media="(min-width: 400px)"
+		    	srcset="img/nina_welch-800_lg.jpg 2x, img/nina_welch-400_sm.jpg">
+		    	<img src="img/nina_welch-600_md.jpg" srcset="img/nina_welch-800_lg.jpg 2x, img/nina_welch-400_sm.jpg" class="img-circle" alt="Kuva Ninasta">
+		    </picture>
+
+		    <p class="about-text">Pulvinar tortor lectus tempor odio eu risus. Duis diam tempus erat augue, wisi cursus, et ac lacus lectus. Lacus malesuada ullamcorper, etiam convallis metus est, risus proin metus orci, fusce diam tempor, in fusce ligula sit sem nam curabitur. Et pede morbi non ipsum, nulla ipsum mi et at. Non sagittis, amet ridiculus morbi nunc nunc facilisi, ut amet nibh eget occaecat mi, quam dui justo non. In amet euismod ut in porta, justo torquent dui, nulla sagittis nisl eros commodo donec nunc, habitasse fermentum erat wisi proin, tellus pulvinar pede eros massa quam etiam. Pede tincidunt quam morbi vel in, nibh quam aliquam. Massa interdum, vehicula sem est eget sed tempus in. Platea consectetuer fusce, proin leo massa aliquam illo semper sapien, tincidunt quis. Suspendisse odio maecenas nec, libero fusce magna.
+		    </p>
+
+		    <div class="flex-container btn-group">
+		    	<a href="#" class="btn btn-style">Katso Ninan CV</a>
+		    	<a href="mailto:?cc=ninakwelch@gmail.com&body=Hi,%20I%20would%20recommend%20Nina%20Welch%20for%20your%20front-end%20web%20development.%20" class="btn btn-style">Suosittele Ninaa</a>
+		    </div><!-- /.btn-group -->
+		</section>
+    </main>
+
+	<footer>
+		<ul id=“contact” class="flex-container contact-list">
+			<li>
+				<a href="https://www.linkedin.com/in/nina-welch-50843137/" class="btn" target="_blank">
+					<span class="fab fa-linkedin-in" title="LinkedIn"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#https://github.com/NinaKWelch" class="btn" target="_blank">
+					<span class="fab fa-github" title="GitHub"></span>
+				</a>
+			</li>
+			<li>
+				<a href="mailto:ninakwelch@gmail.com" class="btn">
+					<span class="far fa-envelope" title="Sähköposti"></span>
+				</a>
+			</li>
+			<li>
+				<a href="tel:+44-788-140-3107" class="btn">
+					<span class="fas fa-phone" title="Puhelin"></span>
+				</a>
+			</li>
+		</ul>
+
+		<p class="legal">2018 &#169; Nina Welch</p>
+	</footer>
+
+    <!-- jQuery & javaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
