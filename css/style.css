@@ -554,7 +554,6 @@ footer {
 /* Main content */
 .portfolio-item {
 	margin-bottom: 35px;
-	padding-bottom: 25px;
 	background-color: #fff;
 	text-align: center;
 }
@@ -562,6 +561,10 @@ footer {
 .portfolio-item:hover {
 	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-link {
+	display: block; /* Ensures the whole content area is clickable  */
 }
 
 .portfolio-link:hover {
@@ -573,7 +576,7 @@ footer {
 }
 
 .portfolio-text {
-	padding-top: 15px;
+	padding: 15px 0 25px;
 	font-weight: 600;
 }
 
