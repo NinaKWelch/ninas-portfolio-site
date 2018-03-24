@@ -327,7 +327,6 @@ template {
 h1,
 h2,
 h3,
-h4,
 p,
 a,
 ul,
@@ -559,16 +558,15 @@ footer {
 }
 
 .portfolio-item:hover {
+	color:#990000;
 	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
 }
 
-.portfolio-link {
+.portfolio-img,
+.portfolio-text {
 	display: block; /* Ensures the whole content area is clickable  */
-}
-
-.portfolio-link:hover {
-	color:#990000;
 }
 
 .portfolio-img {
