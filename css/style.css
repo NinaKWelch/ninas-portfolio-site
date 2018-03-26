@@ -363,6 +363,10 @@ header {
 	padding: 2vw 3vw;
 }
 
+picture {
+	width: 100px; /* To ensure the width is the same on all screen resolutions */
+}
+
 button {
 	cursor: pointer;
 }
@@ -642,7 +646,11 @@ footer {
 
 /* Medium screens */
 @media screen and (min-width: 400px) {
-	main {
+	picture {
+		width: 205px;
+	}
+
+  	main {
 		padding: 25px 25px 35px;
 	}
 
