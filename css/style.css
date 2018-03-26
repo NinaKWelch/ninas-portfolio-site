@@ -359,6 +359,7 @@ header {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between; /* Small screens - aligns the logo to the left and the hamburger menu to the right */
+	padding: 5px 15px; /* For browsers that do not support viewport width */
 	padding: 2vw 3vw;
 }
 
@@ -472,16 +473,19 @@ footer {
 }
 
 .nav-btn {
-	width: 37px;
-	height: 37px;
-	padding: 5px;
+	width: 39px;
+	height: 39px;
+	font-size: 2em;
+	line-height: 0.7em;
+	padding-bottom: 9px;
     background-color: transparent;
-    fill: #c0c0c0; /* Defines the color of Font Awesome svg images */
     border: 2px solid #c0c0c0;
+    color: #c0c0c0;
+
 }
 
 .nav-btn:hover {
-	fill: #f2f3f4;
+	color: #f2f3f4;
     border: 2px solid #f2f3f4;
 }
 
@@ -602,13 +606,12 @@ footer {
 	margin-bottom: 25px;
 }
 
-/* Font Awesome icons */
 .contact-link {
 	display: inline-block;
 	width: 32px;
 	margin: 0 6px;
 	padding: 9px;
-	fill: #555;
+	fill: #555; /* Defines the color of Font Awesome svg images */
 }
 
 .linkedin:hover {
@@ -656,10 +659,12 @@ footer {
 
 
 	/* Header */
-    .nav-btn {
-		width: 40px;
-		height: 40px;
-	}
+	.nav-btn {
+		width: 45px;
+		height: 45px;
+		font-size: 2.3em;
+		padding-bottom: 10px;
+    }
 
 	.banner {
         padding-right: 25px;
@@ -686,6 +691,7 @@ footer {
     .container {
 		background-image: url(../img/banner_img.jpg);
     }
+
 
    /* Header */
     .language-menu {
