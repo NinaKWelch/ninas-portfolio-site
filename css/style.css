@@ -327,7 +327,6 @@ template {
 h1,
 h2,
 h3,
-h4,
 p,
 a,
 ul,
@@ -352,17 +351,16 @@ ul {
 
 body {
 	background-color: #f2f3f4;
-	font-family: 'Open Sans', sans-serif;
+	font: 18px/1.3em 'Open Sans', sans-serif; /* font-size/line-height, font-family */
 	color: #555;
-	font-size: 18px;
-	line-height: 1.3em;
 }
 
 header {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between; /* Small screens - aligns the logo to the left and the hamburger menu to the right */
-	padding: 5px 15px;
+	padding: 5px 15px; /* For browsers that do not support viewport width */
+	padding: 2vw 3vw;
 }
 
 button {
@@ -383,7 +381,7 @@ img {
 	width: 100%; /* Sets the content width to the width of the viewport */
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box; /* Ensures borders and padding do not increase the width of the element */
-    /* border: 1px solid #d3d3d3; TODO: design aid, to be removed  */
+    /* border: 1px solid #d3d3d3; design aid, to be removed  */
 }
 
 main {
@@ -419,7 +417,6 @@ footer {
 
 
 /* Links */
-.nav-btn,
 .nav-link,
 .portfolio-link,
 .language,
@@ -467,24 +464,25 @@ footer {
 }
 
 .logo {
-	padding-top: 0.2em;
+	padding-top: 4px;
 	/* Font style in case the image does not load */
 	font-size: 1.8em;
-	color: #f2f3f4;
 	font-weight: 300;
+	color: #f2f3f4;
 	letter-spacing: 0.02em;
 }
 
 .nav-btn {
-	font-size: 1.4em;
-    padding: 3px 12px;
+    width: 38px;
+    height: 38px;
+    padding: 1px 3px 0;
     background-color: transparent;
-    color: #c0c0c0;
+    fill: #c0c0c0; /* Defines the color of Font Awesome svg images */
     border: 2px solid #c0c0c0;
 }
 
 .nav-btn:hover {
-	color: #f2f3f4;
+	fill: #f2f3f4;
     border: 2px solid #f2f3f4;
 }
 
@@ -554,18 +552,19 @@ footer {
 /* Main content */
 .portfolio-item {
 	margin-bottom: 35px;
-	padding-bottom: 25px;
 	background-color: #fff;
 	text-align: center;
 }
 
 .portfolio-item:hover {
+	color:#990000;
 	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-link:hover {
-	color:#990000;
+.portfolio-img,
+.portfolio-text {
+	display: block; /* Ensures the whole content area is clickable  */
 }
 
 .portfolio-img {
@@ -573,7 +572,7 @@ footer {
 }
 
 .portfolio-text {
-	padding-top: 15px;
+	padding: 15px 0 25px;
 	font-weight: 600;
 }
 
@@ -604,12 +603,25 @@ footer {
 	margin-bottom: 25px;
 }
 
-.contact-list a {
+.contact-link {
 	display: inline-block;
+	width: 32px;
 	margin: 0 6px;
-	padding: 12px;
-	font-size: 1.8em;
-	color: #555;
+	padding: 9px;
+	fill: #555; /* Defines the color of Font Awesome svg images */
+}
+
+.linkedin:hover {
+	fill: #0077B5;
+}
+
+.github:hover {
+	fill:  #181717;
+}
+
+.envelope:hover,
+.phone:hover {
+	fill: #990000;
 }
 
 .legal {
@@ -618,30 +630,6 @@ footer {
     text-align: right;
     font-size: 0.7em;
     color: grey;
-}
-
-
-/* Font Awesome icons */
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
-}
-
-.fa-phone {
-	font-size: 0.85em;
-	padding-top: 3px;
-}
-
-.fa-linkedin-in:hover {
-	color: #0077B5;
-}
-
-.fa-github:hover {
-	color: #181717;
-}
-
-.fa-envelope:hover,
-.fa-phone:hover {
-    color:  #990000;
 }
 
 
@@ -654,10 +642,6 @@ footer {
 
 /* Medium screens */
 @media screen and (min-width: 400px) {
-	header {
-	   padding: 15px 25px;
-    }
-
 	main {
 		padding: 25px 25px 35px;
 	}
@@ -672,9 +656,10 @@ footer {
 
 
 	/* Header */
-    .nav-btn {
-		font-size: 1.6em;
-	}
+	.nav-btn {
+		width: 42px;
+		height: 42px;
+    }
 
 	.banner {
         padding-right: 25px;
@@ -701,6 +686,7 @@ footer {
     .container {
 		background-image: url(../img/banner_img.jpg);
     }
+
 
    /* Header */
     .language-menu {
@@ -803,9 +789,9 @@ footer {
 
 @media screen and (min-width: 1080px) {
 	header,
+	main,
 	.nav-menu,
-	.banner,
-	main {
+	.banner {
 		max-width: 1080px; /* Sets the maximum width of the content */
 		margin: 0 auto;
 	}
@@ -814,7 +800,6 @@ footer {
     /* Main content */
 	.img-circle {
     	margin: 0 30px 0 0;
-	    /* max-width: 20vw; Sets the maximum width of the image to 20% of the viewport width */
     }
 
     .btn-group {

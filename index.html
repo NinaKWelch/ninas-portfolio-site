@@ -5,9 +5,6 @@
 	<title>Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Font Awesome icon-fonts -->
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-
 	<!-- Google Fonts: Open Sans & Oswald -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -23,13 +20,14 @@
 		        <source
 		          media="(min-width: 400px)"
 		          srcset="img/nw_design_logo_lg.png 2x, img/nw_design_logo_md.png">
-		        <img src="img/nw_d_logo_sm.png" srcset="img/nw_d_logo_lg.png 2x, img/nw_d_logo_sm.png" class="logo" alt="NW*design">
+		        <img srcset="img/nw_d_logo_lg.png 2x"
+		             src="img/nw_d_logo_sm.png"  class="logo" alt="NW*design">
 		    </picture>
 
             <!-- Hamburger menu -->
-			<button class="btn nav-btn">
-				<span class="fas fa-bars" title="Menu"></span>
-				<span class="sr-only">Menu</span>
+			<button class="nav-btn" title="Menu">
+				<!-- SVG image by Font Awesome at https://fontawesome.com -->
+				<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
 			</button>
 
 			<div class="language-menu">
@@ -59,70 +57,52 @@
 
 			<div class="portfolio-item">
 				<a href="http://yunji.co.uk" class="portfolio-link" target="_blank">
-					<picture>
-						<source
-						media="(min-width: 600px)"
-						srcset="img/portfolio_yunji-800_lg.jpg 2x, img/portfolio_yunji-400_sm.jpg">
-						<source
-						media="(min-width: 400px)"
-						srcset="img/portfolio_yunji-1200_xlg.jpg 2x, img/portfolio_yunji-600_md.jpg">
-						<img src="img/portfolio_yunji-600_md.jpg" srcset="img/portfolio_yunji-800_lg.jpg 2x, img/portfolio_yunji-400_sm.jpg" class="portfolio-img" alt="Yunji Website front page">
-					</picture>
+					<img srcset="img/portfolio_yunji-1200_xlg.jpg 2x"
+						 src="img/portfolio_yunji-600_md.jpg" class="portfolio-img" alt="Yunji Website front page">
 
-					<h4 class="portfolio-text">Yunji Website</h4>
+				    <span class="portfolio-text">Yunji Website</span>
 				</a>
 			</div>
 
 			<div class="portfolio-item">
 				<a href="https://ninakwelch.github.io/trading-card-website/" class="portfolio-link" target="_blank">
-					<picture>
-						<source
-						media="(min-width: 600px)"
-						srcset="img/portfolio_trading_cards-800-lg.jpg 2x, img/portfolio_trading_cards-400_sm.jpg">
-						<source
-						media="(min-width: 400px)"
-						srcset="img/portfolio_trading_cards-1200_xlg.jpg 2x, img/portfolio_trading_cards-600_md.jpg">
-						<img src="img/portfolio_trading_cards-600_md.jpg" srcset="img/portfolio_trading_cards-800_lg.jpg 2x, img/portfolio_trading_cards-400_sm.jpg" class="portfolio-img" alt="Trading Cards Website front page">
-					</picture>
+					<img srcset="img/portfolio_trading_cards-1200_xlg.jpg 2x"
+					     src="img/portfolio_trading_cards-600_md.jpg" class="portfolio-img" alt="Trading Cards Website front page">
 
-					<h4 class="portfolio-text">Trading Cards Website</h4>
+					<span class="portfolio-text">Trading Cards Website</span>
 				</a>
 			</div>
 
 			<div class="portfolio-item">
 				<a href="https://ninakwelch.github.io/ninas-pixel-art-maker" class="portfolio-link" target="_blank">
-					<picture>
-						<source
-						media="(min-width: 600px)"
-						srcset="img/portfolio_pixel_art-800_lg.jpg 2x, img/portfolio_pixel_art-400_sm.jpg">
-						<source
-						media="(min-width: 400px)"
-						srcset="img/portfolio_pixel_art-1200_xlg.jpg 2x, img/portfolio_pixel_art-600_md.jpg">
-						<img src="img/portfolio_pixel_art-600_md.jpg" srcset="img/portfolio_pixel_art-800_lg.jpg 2x, img/portfolio_pixel_art-400_sm.jpg" class="portfolio-img" alt="Pixel Art Maker front page">
-					</picture>
+					<img srcset="img/portfolio_pixel_art-1200_xlg.jpg 2x"
+					     src="img/portfolio_pixel_art-600_md.jpg" class="portfolio-img" alt="Pixel Art Maker front page">
 
-					<h4 class="portfolio-text">Pixel Art Maker</h4>
+					<span class="portfolio-text">Pixel Art Maker</span>
 				</a>
 			</div>
 
 			<div class="portfolio-item">
 				<a href="#" class="portfolio-link" target="_blank">
 					<img src="http://via.placeholder.com/500x375" class="portfolio-img" alt="Placeholder image">
-					<h4 class="portfolio-text">Project 4</h4>
+
+					<span class="portfolio-text">Project 4</span>
 				</a>
 			</div>
 
 			<div class="portfolio-item">
 				<a href="#" class="portfolio-link" target="_blank">
 					<img src="http://via.placeholder.com/500x375" class="portfolio-img" alt="Placeholder image">
-					<h4 class="portfolio-text">Project 5</h4>
+
+					<span class="portfolio-text">Project 5</span>
 				</a>
 			</div>
 
 			<div class="portfolio-item">
 				<a href="#" class="portfolio-link" target="_blank">
 					<img src="http://via.placeholder.com/500x375" class="portfolio-img" alt="Placeholder image">
-					<h4 class="portfolio-text">Project 6</h4>
+
+					<span class="portfolio-text">Project 6</span>
 				</a>
 			</div>
 		</section>
@@ -130,43 +110,40 @@
 		<section id=“about”>
 		    <h2>About</h2>
 
-		    <picture>
-		    	<source
-		    	media="(min-width: 400px)"
-		    	srcset="img/nina_welch-800_lg.jpg 2x, img/nina_welch-400_sm.jpg">
-		    	<img src="img/nina_welch-600_md.jpg" srcset="img/nina_welch-800_lg.jpg 2x, img/nina_welch-400_sm.jpg" class="img-circle" alt="Picture of Nina">
-		    </picture>
+		    <img srcset="img/nina_welch-800_lg.jpg 2x"
+		         src="img/nina_welch-400_sm.jpg" class="img-circle" alt="Picture of Nina">
 
 		    <p class="about-text">Pulvinar tortor lectus tempor odio eu risus. Duis diam tempus erat augue, wisi cursus, et ac lacus lectus. Lacus malesuada ullamcorper, etiam convallis metus est, risus proin metus orci, fusce diam tempor, in fusce ligula sit sem nam curabitur. Et pede morbi non ipsum, nulla ipsum mi et at. Non sagittis, amet ridiculus morbi nunc nunc facilisi, ut amet nibh eget occaecat mi, quam dui justo non. In amet euismod ut in porta, justo torquent dui, nulla sagittis nisl eros commodo donec nunc, habitasse fermentum erat wisi proin, tellus pulvinar pede eros massa quam etiam. Pede tincidunt quam morbi vel in, nibh quam aliquam. Massa interdum, vehicula sem est eget sed tempus in. Platea consectetuer fusce, proin leo massa aliquam illo semper sapien, tincidunt quis. Suspendisse odio maecenas nec, libero fusce magna.
 		    </p>
 
 		    <div class="flex-container btn-group">
 		    	<a href="#" class="btn btn-style">Download CV</a>
-		    	<a href="mailto:?cc=ninakwelch@gmail.com&body=Hi,%20I%20would%20recommend%20Nina%20Welch%20for%20your%20front-end%20web%20development.%20" class="btn btn-style">Recommend Nina</a>
+		    	<a href="mailto:?cc=ninakwelch@gmail.com&amp;body=Hi,%20I%20would%20recommend%20Nina%20Welch%20for%20your%20front-end%20web%20development.%20" class="btn btn-style">Recommend Nina</a>
 		    </div><!-- /.btn-group -->
 		</section>
     </main>
 
 	<footer>
 		<ul id=“contact” class="flex-container contact-list">
+			<!-- SVG images by Font Awesome at https://fontawesome.com -->
 			<li>
-				<a href="https://www.linkedin.com/in/nina-welch-50843137/" class="btn" target="_blank">
-					<span class="fab fa-linkedin-in" title="LinkedIn"></span>
+				<a href="https://www.linkedin.com/in/nina-welch-50843137/" title="Chenk my LinkedIn page" class="contact-link linkedin" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 30 480 480"><path d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"/></svg>
 				</a>
 			</li>
 			<li>
-				<a href="#https://github.com/NinaKWelch" class="btn" target="_blank">
-					<span class="fab fa-github" title="GitHub"></span>
+				<a href="#https://github.com/NinaKWelch" title="Check my GitHub page" class="contact-link github" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 512 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
 				</a>
 			</li>
 			<li>
-				<a href="mailto:ninakwelch@gmail.com" class="btn">
-					<span class="far fa-envelope" title="Email"></span>
+				<a href="mailto:ninakwelch@gmail.com" title="Send me an email" class="contact-link envelope">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
 				</a>
 			</li>
 			<li>
-				<a href="tel:+44-788-140-3107" class="btn">
-					<span class="fas fa-phone" title="Phone"></span>
+				<a href="tel:+44-788-140-3107" title="Give me a call" class="contact-link phone">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 580 580"><path d="M493.397 24.615l-104-23.997c-11.314-2.611-22.879 3.252-27.456 13.931l-48 111.997a24 24 0 0 0 6.862 28.029l60.617 49.596c-35.973 76.675-98.938 140.508-177.249 177.248l-49.596-60.616a24 24 0 0 0-28.029-6.862l-111.997 48C3.873 366.516-1.994 378.08.618 389.397l23.997 104C27.109 504.204 36.748 512 48 512c256.087 0 464-207.532 464-464 0-11.176-7.714-20.873-18.603-23.385z"/></svg>
 				</a>
 			</li>
 		</ul>
