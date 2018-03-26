@@ -473,19 +473,17 @@ footer {
 }
 
 .nav-btn {
-    width: 37px;
-    height: 37px;
-    font: sans-serif; /* */
+    width: 38px;
+    height: 38px;
     font-size: 2em;
-    line-height: 0.7em;
+    padding: 2px 3px 0;
     background-color: transparent;
+    fill: #c0c0c0; /* Defines the color of Font Awesome svg images */
     border: 2px solid #c0c0c0;
-    color: #c0c0c0;
-
 }
 
 .nav-btn:hover {
-	color: #f2f3f4;
+	fill: #f2f3f4;
     border: 2px solid #f2f3f4;
 }
 
@@ -660,9 +658,9 @@ footer {
 
 	/* Header */
 	.nav-btn {
-		width: 45px;
-		height: 45px;
-		font-size: 2.3em;
+		width: 42px;
+		height: 42px;
+		padding-top: 4px;
     }
 
 	.banner {
