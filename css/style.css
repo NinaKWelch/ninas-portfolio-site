@@ -475,8 +475,7 @@ footer {
 .nav-btn {
     width: 38px;
     height: 38px;
-    font-size: 2em;
-    padding: 2px 3px 0;
+    padding: 1px 3px 0;
     background-color: transparent;
     fill: #c0c0c0; /* Defines the color of Font Awesome svg images */
     border: 2px solid #c0c0c0;
@@ -660,7 +659,6 @@ footer {
 	.nav-btn {
 		width: 42px;
 		height: 42px;
-		padding-top: 4px;
     }
 
 	.banner {
