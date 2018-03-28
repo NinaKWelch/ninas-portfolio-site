@@ -8,7 +8,7 @@ Udacity Front-End Web Development Nanodegree Project 2 - Build a Responsive Port
 
 ## Screenshots
 
-![](http://res.cloudinary.com/ninaw/image/upload/v1522260449/ninas-portfolio_sm_j0emf4.png) ![](http://res.cloudinary.com/ninaw/image/upload/v1522260490/ninas-portfolio_md_clsorp.png)
+![](http://res.cloudinary.com/ninaw/image/upload/c_scale,h_500,q_100/v1522260449/ninas-portfolio_sm_j0emf4.png) ![](http://res.cloudinary.com/ninaw/image/upload/c_scale,h_500,q_auto:best/v1522260490/ninas-portfolio_md_clsorp.png)
 
 ![](http://res.cloudinary.com/ninaw/image/upload/v1522260470/ninas-portfolio_lg_ind5x1.png)
 
