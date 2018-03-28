@@ -360,7 +360,7 @@ header {
 	    -ms-flex-pack: justify;
 	        justify-content: space-between; /* Small screens - aligns the logo to the left and the hamburger menu to the right */
 	padding: 5px 15px; /* For browsers that do not support viewport width */
-	padding: 2vw 3vw;
+	padding: 2% 3%;
 }
 
 picture {

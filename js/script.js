@@ -5,7 +5,7 @@
 */
 
 
-/* Navigation toggle for small screens */
+// Navigation toggle for small screens
 $('.nav-btn').click(function () {
 	$('nav').slideToggle();
 });
