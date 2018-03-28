@@ -360,7 +360,11 @@ header {
 	    -ms-flex-pack: justify;
 	        justify-content: space-between; /* Small screens - aligns the logo to the left and the hamburger menu to the right */
 	padding: 5px 15px; /* For browsers that do not support viewport width */
-	padding: 2vw 3vw;
+	padding: 2% 3%;
+}
+
+picture {
+	width: 100px; /* To ensure the width is the same on all screen resolutions */
 }
 
 button {
@@ -642,7 +646,11 @@ footer {
 
 /* Medium screens */
 @media screen and (min-width: 400px) {
-	main {
+	picture {
+		width: 205px;
+	}
+
+  	main {
 		padding: 25px 25px 35px;
 	}
 
