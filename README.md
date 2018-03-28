@@ -62,4 +62,5 @@ Udacity Front-End Web Development Nanodegree Project 2 - Build a Responsive Port
    + Decide if it is better to use icons instead of SVG images.
    		- At the moment the SVG images are inline so they can be styled for hover states
    + Make the transition for anchor links smoother
+   + The banner image loads too slowly
 
