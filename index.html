@@ -37,9 +37,9 @@
         <nav>
             <ul class="flex-container nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#portfolio" class="nav-link" onclick="portfolio.focus();">Portfolio</a></li>
+                <li><a href="#about" class="nav-link" onclick="about.focus();">About</a></li>
+                <li><a href="#contact" class="nav-link" onclick="contact.focus();">Contact</a></li>
                 <li class="nav-language"><a href="#" class="language language-active">English</a> | <a href="index_fi.html" class="language">Finnish</a></li>
             </ul>
         </nav>
@@ -52,7 +52,7 @@
     <!-- /.container -->
 
     <main>
-        <section id="portfolio" class="flex-container">
+        <section id="portfolio" class="flex-container" tabindex="-1">
             <h2>Portfolio</h2>
 
             <div class="portfolio-item">
@@ -104,7 +104,7 @@
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" tabindex="-1">
             <h2>About</h2>
 
             <img srcset="img/nina_welch-800_lg.jpg 2x" src="img/nina_welch-400_sm.jpg" class="img-circle" alt="Picture of Nina">
@@ -121,7 +121,7 @@
     </main>
 
     <footer>
-        <ul id="contact" class="flex-container contact-list">
+        <ul id="contact" class="flex-container contact-list" tabindex="-1">
             <!-- SVG images by Font Awesome at https://fontawesome.com -->
             <li>
                 <a href="https://www.linkedin.com/in/nina-welch-50843137/" title="Chenk my LinkedIn page" class="contact-link linkedin" target="_blank">
